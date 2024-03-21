@@ -17,9 +17,9 @@ class HomeActivity : AppCompatActivity() {
 //        editText.setText((id))
 //        val id = intent.getStringExtra("아이디")
 
-//        val strData =  intent.getStringExtra("dataFromMain")
-//        val editText = findViewById<EditText>(R.id.edit_Text)
-//        editText.setText(strData)
+        val strData =  intent.getStringExtra("id")
+        val editText = findViewById<EditText>(R.id.editText)
+        editText?.setText(strData)
 
         val btn: Button = findViewById<Button>(R.id.button4)
         btn.setOnClickListener {

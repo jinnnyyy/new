@@ -17,21 +17,25 @@ class SignInActivity : AppCompatActivity() {
         val bnt = findViewById<Button>(R.id.button)
         bnt.setOnClickListener {
             val edit = findViewById<EditText>(R.id.edit_Text)
-            edit.text.toString().length
+//            edit.text.toString().length
             val edit2 = findViewById<EditText>(R.id.editTextTextPassword3)
-            edit2.text.toString().length
+//            edit2.text.toString().length
 
-            if (edit.length()==0){
+            if (edit.text.isBlank()){
                 Toast.makeText(applicationContext,"아이디를 확인해주세요", Toast.LENGTH_LONG).show()
             }
-//            else if (edit.length()!==0){
-//                val edit_Text = findViewById<EditText>(R.id.editTextText)
-//                val strData = edit_Text.text.toString()
-//                val intent=Intent(this,HomeAcivity::class.java)
-//                intent.putExtra ("id", edit.text)
-//                startActivity(intent)
-//            }
-            else if(edit2.length()==0){
+            else if (edit.text.isNotBlank()){
+                val btn = findViewById<Button>(R.id.button)
+                btn.setOnClickListener {
+                    val editText = findViewById<EditText>(R.id.edit_Text)
+                    val strData = editText.text.toString()
+                    val intent=Intent(this,HomeActivity::class.java)
+                    intent.putExtra ("id", strData)
+                    startActivity(intent)
+                }
+
+            }
+            else if(edit2.text.isBlank()){
                 Toast.makeText(applicationContext,"비밀번호를 확인해주세요", Toast.LENGTH_LONG).show()
             }
             else {
