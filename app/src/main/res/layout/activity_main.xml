@@ -27,8 +27,8 @@
         android:layout_marginTop="24dp"
         android:text="비밀번호"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintStart_toStartOf="@+id/edit_Text"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Text" />
 
     <Button
         android:id="@+id/button"
@@ -75,7 +75,7 @@
         android:hint="비밀번호를 입력하세요"/>
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/edit_Text"
         android:layout_width="180dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"

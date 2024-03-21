@@ -14,11 +14,9 @@ class SignInActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-
         val bnt = findViewById<Button>(R.id.button)
         bnt.setOnClickListener {
-            val edit = findViewById<EditText>(R.id.editTextText)
+            val edit = findViewById<EditText>(R.id.edit_Text)
             edit.text.toString().length
             val edit2 = findViewById<EditText>(R.id.editTextTextPassword3)
             edit2.text.toString().length
@@ -36,12 +34,13 @@ class SignInActivity : AppCompatActivity() {
             else if(edit2.length()==0){
                 Toast.makeText(applicationContext,"비밀번호를 확인해주세요", Toast.LENGTH_LONG).show()
             }
-            else{
-                val intent = Intent(this, HomeAcivity::class.java)
+            else {
+//                val edittext = findViewById<EditText>(R.id.edit_Text)
+//                val strData = edittext.text.toString()
+                val intent = Intent(this, HomeActivity::class.java)
+//                intent.putExtra("dataFromMain", strData)
                 startActivity(intent)
             }
-
-
         }
         val bnt2 = findViewById<Button>(R.id.button2)
         bnt2.setOnClickListener {
