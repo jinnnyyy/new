@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="randomimage">
+    <item>@drawable/noname</item>
+    <item>@drawable/noname2</item>
+    <item>@drawable/pf</item>
+    <item>@drawable/purple</item>
+    <item>@drawable/smile</item>
+    </array>
+</resources>

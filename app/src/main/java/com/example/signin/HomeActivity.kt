@@ -3,8 +3,12 @@ package com.example.signin
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
+import java.util.Random
+
 
 class HomeActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -12,12 +16,7 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_acivity)
 
-//        val id = intent.getStringExtra("id")
-//        val editText = findViewById<EditText>(R.id.editTextText)
-//        editText.setText((id))
-//        val id = intent.getStringExtra("아이디")
-
-        val strData =  intent.getStringExtra("id")
+        val strData = intent.getStringExtra("id")
         val editText = findViewById<EditText>(R.id.editText)
         editText?.setText(strData)
 
